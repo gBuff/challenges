@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html><body>
-<h1>My 3v1L site</h1>
+<html>
+<head>
 <script type="text/javascript">
 /*
 var post_data = 'username=toto';
@@ -16,4 +16,7 @@ xmlhttp.send(post_data);
 */
 alert('toto');
 </script>
+</head>
+<body>
+<h1>My 3v1L site</h1>
 </body></html>
