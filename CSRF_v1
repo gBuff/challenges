@@ -1,3 +1,4 @@
+<html><body>
 <script>
 /*
 var post_data = 'username=toto';
@@ -13,3 +14,4 @@ xmlhttp.send(post_data);
 */
 alert('toto');
 </script>
+</body></html>
