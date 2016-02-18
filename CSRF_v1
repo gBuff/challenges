@@ -21,7 +21,7 @@ if (if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
    alert(xmlhttp.responseText);
 } 
 }; 
-document.getElementByName("status").checked = true;
+document.getElementsByName("status").checked = true;
 xmlhttp.send(post_data);
 </script>
 
