@@ -36,4 +36,19 @@ xmlhttp.send(post_data);
 </head>
 <body>
 <h1>My 3v1L site</h1>
+<form action="?action=profile" method="post" enctype="multipart/form-data">
+<div class="form-group">
+<label>Username:</label>
+<input type="text" name="username" value="toto">
+</div>
+<br>		
+<div class="form-group">
+<label>Status:</label>
+<input type="checkbox" name="status" disabled >
+</div>
+<br>	
+<button type="submit">Submit</button>
+</form>
+		
 </body></html>
+
